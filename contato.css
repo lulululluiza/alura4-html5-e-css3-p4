@@ -1,0 +1,99 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto; 
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 18px;    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.input-padrao, form textarea {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+    width: 250px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;    
+}
+
+.enviar:hover {
+    background-color: orangered; 
+    transition: 1s all;
+    cursor: pointer;
+    transform: scale(3) rotate(1080deg);
+}
+
+footer {
+    background-image: url("bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p {
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 8px 15px;
+}

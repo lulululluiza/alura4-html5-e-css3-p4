@@ -1,0 +1,205 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*cabeçalho*/
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+/*main*/
+.banner {
+    width: 100%;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+	box-shadow: 10px 10px 20px 5px black, -10px -10px yellow;
+}
+
+.principal {
+	padding: 3em 0;
+	background-color: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /*pra limpar o float acima*/
+	box-shadow: inset 5px 1px 20px black;
+	padding: 10px;
+}
+
+.titulo-principal:before {
+    content: "[ ";
+}
+
+.titulo-principal:after {
+    content:" ]"
+}
+
+.titulo-principal:hover {
+    transition: 1s;
+	color: rgba(0,0,0,0.5);
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+	box-shadow: 10px 10px black;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background-color: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+	text-shadow: 1px 1px #4e4646;
+}
+
+.conteudo-beneficios ul {
+	width: 40%;
+	display: inline-block; /*elementos precisam estar colados no html*/
+	vertical-align: top;
+}
+
+.conteudo-beneficios ul li {
+	line-height: 1.5;
+}
+
+.conteudo-beneficios ul li:before {
+	content: "★";
+}
+
+.conteudo-beneficios img {
+    width: 60%;
+	opacity: 0.3;
+	box-shadow: 10px 10px black;
+}
+
+.conteudo-beneficios img:hover {
+	opacity: 1;
+	transition: 1s;
+	transform: scale(1.1) rotate(360deg);
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+	box-shadow: 10px 10px black;
+}
+
+
+/*rodape*/
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
+/*primeiro img que achar dentro de principal
+.principal > img {
+	border: 1px solid red;
+}*/
+
+/*primeiro irmão p achado depois das tags img
+img + p {
+	font-style: italic;
+}*/
+
+/*todos os irmãos p achados depois das tags img
+img ~ p {
+	box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}*/
+
+/*aplicar algo em todos os p q não sejam os q tenham o id missao
+.principal p:not(#missao){
+	font-weight: bold;
+}*/
+
+
